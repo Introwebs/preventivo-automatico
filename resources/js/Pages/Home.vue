@@ -6,5 +6,6 @@ defineOptions({ layout: AuthenticatedLayout });
 </script>
 
 <template>
-    <Head title="Dashboard" />
+    <Head title="Home" />
+    <h1>Test</h1>
 </template>
