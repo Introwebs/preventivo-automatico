@@ -5,6 +5,7 @@ import InputError from '@/Components/InputError.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import TextInput from '@/Components/TextInput.vue';
+import GoogleAuthForm from '@/Components/GoogleAuthForm.vue';
 import { Head, Link, useForm } from '@inertiajs/vue3';
 
 defineProps({
@@ -96,5 +97,6 @@ const submit = () => {
                 </Link>
             </div>
         </form>
+        <GoogleAuthForm :route="route('google.redirect')" />
     </GuestLayout>
 </template>
