@@ -8,6 +8,7 @@ import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 import { Head, Link } from '@inertiajs/vue3';
 import PrimeVue from 'primevue/config';
 import 'primeicons/primeicons.css';
+import Tooltip from 'primevue/tooltip';
 
 const appName = 'Laravel';
 
@@ -21,6 +22,7 @@ createInertiaApp({
             .use(PrimeVue, {unstyled: true})
             .component('Link', Link)
             .component('Head', Head)
+            .directive('tooltip', Tooltip)
             .mount(el);
     },
     progress: {
