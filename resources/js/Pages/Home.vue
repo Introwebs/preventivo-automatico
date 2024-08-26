@@ -7,5 +7,4 @@ defineOptions({ layout: AuthenticatedLayout });
 
 <template>
     <Head title="Home" />
-    <h1>Test</h1>
 </template>
