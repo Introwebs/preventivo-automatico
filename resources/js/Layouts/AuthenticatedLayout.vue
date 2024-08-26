@@ -6,8 +6,10 @@ import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link } from '@inertiajs/vue3';
+import LightDarkModeButton from '@/Components/LightDarkModeButton.vue';
 
 const showingNavigationDropdown = ref(false);
+
 </script>
 
 <template>
@@ -36,7 +38,7 @@ const showingNavigationDropdown = ref(false);
                                         <span class="inline-flex rounded-md">
                                             <button
                                                 type="button"
-                                                class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150"
+                                                class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 dark:text-gray-300 bg-white dark:bg-gray-800 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none transition ease-in-out duration-150"
                                             >
                                                 {{ $page.props.auth.user.name }}
 
@@ -64,12 +66,13 @@ const showingNavigationDropdown = ref(false);
                                     </template>
                                 </Dropdown>
                             </div>
+                            <LightDarkModeButton />
                         </div>
 
                         <template v-else>
                             <div class="w-1/3 flex items-center justify-end gap-x-4">
-                                <Link :href="route('login')" class="flex dark:text-white items-center px-2 transition-all">Accedi</Link>
-                                <Link :href="route('register')" class="flex dark:text-white items-center px-2 transition-all">Registrati</Link>
+                                <Link :href="route('login')" class="flex dark:text-gray-300 items-center px-2 transition-all">Accedi</Link>
+                                <Link :href="route('register')" class="flex dark:text-gray-300 items-center px-2 transition-all">Registrati</Link>
                             </div>
                         </template>
 
