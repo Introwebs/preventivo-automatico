@@ -23,27 +23,26 @@ const verificationLinkSent = computed(() => props.status === 'verification-link-
     <GuestLayout>
         <Head title="Email Verification" />
 
-        <div class="mb-4 text-sm text-gray-600 dark:text-gray-400">
-            Thanks for signing up! Before getting started, could you verify your email address by clicking on the link
-            we just emailed to you? If you didn't receive the email, we will gladly send you another.
+        <div class="mb-4 text-sm text-gray-600 dark:text-gray-400 px-4 text-justify">
+            Grazie per esserti iscritto! Prima di iniziare, verifica il tuo indirizzo e-mail cliccando sul link che ti abbiamo appena inviato per e-mail. Se non ha ricevuto l'e-mail, saremo lieti di inviartene un'altra.
         </div>
 
-        <div class="mb-4 font-medium text-sm text-green-600 dark:text-green-400" v-if="verificationLinkSent">
-            A new verification link has been sent to the email address you provided during registration.
+        <div class="mb-4 font-medium text-sm text-green-600 px-4" v-if="verificationLinkSent">
+            Un nuovo link di verifica è stato inviato all'indirizzo e-mail fornito durante la registrazione.
         </div>
 
         <form @submit.prevent="submit">
-            <div class="mt-4 flex items-center justify-between">
+            <div class="mt-4 flex items-center justify-between px-4">
                 <PrimaryButton :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                    Resend Verification Email
+                    Invia un altro link
                 </PrimaryButton>
 
                 <Link
                     :href="route('logout')"
                     method="post"
                     as="button"
-                    class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800"
-                    >Log Out</Link
+                    class="underline text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-500 rounded-md focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-indigo-500"
+                    >Esci</Link
                 >
             </div>
         </form>
