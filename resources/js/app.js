@@ -7,6 +7,7 @@ import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 import { Head, Link } from '@inertiajs/vue3';
 import PrimeVue from 'primevue/config';
+import 'primeicons/primeicons.css';
 
 const appName = 'Laravel';
 
