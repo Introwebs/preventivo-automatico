@@ -22,6 +22,7 @@
         "lodash": "^4.17.21",
         "primeicons": "^7.0.0",
         "primevue": "^4.0.5",
+        "tailwindcss-primeui": "^0.3.4",
         "vue-lodash": "^2.1.2"
     }
 }

@@ -73,6 +73,7 @@ const showingNavigationDropdown = ref(false);
                             <div class="w-1/3 flex items-center justify-end gap-x-4">
                                 <Link :href="route('login')" class="flex dark:text-gray-300 items-center px-2 transition-all">Accedi</Link>
                                 <Link :href="route('register')" class="flex dark:text-gray-300 items-center px-2 transition-all">Registrati</Link>
+                                <LightDarkModeButton />
                             </div>
                         </template>
 
