@@ -11,6 +11,8 @@ import PrimeVue from 'primevue/config';
 import Aura from '../../presets/aura';
 import 'primeicons/primeicons.css';
 import Tooltip from 'primevue/tooltip';
+import ScrollTop from 'primevue/scrolltop';
+import BackLink from '@/Components/BackLink.vue';
 
 const appName = 'Laravel';
 
@@ -24,6 +26,8 @@ createInertiaApp({
             .use(PrimeVue, {unstyled: true, pt: Aura})
             .component('Link', Link)
             .component('Head', Head)
+            .component('ScrollTop', ScrollTop)
+            .component('BackLink', BackLink)
             .directive('tooltip', Tooltip)
             .mount(el);
     },
