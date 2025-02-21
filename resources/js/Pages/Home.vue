@@ -1,7 +1,7 @@
 <script setup>
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import MainLayout from '@/Layouts/MainLayout.vue';
 
-defineOptions({ layout: AuthenticatedLayout });
+defineOptions({ layout: MainLayout });
 
 </script>
 

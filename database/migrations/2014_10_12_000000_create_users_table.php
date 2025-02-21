@@ -19,6 +19,7 @@ return new class extends Migration
             $table->timestamp('last_login_at')->nullable();
             $table->string('password')->nullable();
             $table->string('google_id')->nullable();
+            $table->string('role')->default('guest');
             $table->rememberToken();
             $table->timestamps();
         });

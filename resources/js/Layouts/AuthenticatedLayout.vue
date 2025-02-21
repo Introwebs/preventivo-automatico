@@ -5,10 +5,15 @@ import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
+import Footer from '@/Components/Footer.vue';
 import { Link } from '@inertiajs/vue3';
 import LightDarkModeButton from '@/Components/LightDarkModeButton.vue';
 
 const showingNavigationDropdown = ref(false);
+
+const props = defineProps({
+    showAdminTag: Boolean
+});
 
 </script>
 
@@ -22,11 +27,12 @@ const showingNavigationDropdown = ref(false);
                         <div class="flex">
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
-                                <Link :href="route('dashboard')">
+                                <Link :href="route('home')">
                                     <ApplicationLogo
                                         class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200"
                                     />
                                 </Link>
+                                <span v-if="props.showAdminTag" class="text-xl italic text-gray-700 dark:text-gray-300 font-bold ml-5">Admin</span>
                             </div>
                         </div>
 
@@ -59,10 +65,9 @@ const showingNavigationDropdown = ref(false);
                                     </template>
 
                                     <template #content>
+                                        <DropdownLink v-if="$page.props.auth.user.role === 'admin'" :href="route('admin.dashboard')"> Admin </DropdownLink>
                                         <DropdownLink :href="route('profile.edit')"> Profilo </DropdownLink>
-                                        <DropdownLink :href="route('logout')" method="post" as="button">
-                                            Esci
-                                        </DropdownLink>
+                                        <DropdownLink :href="route('logout')" method="post" as="button">Esci</DropdownLink>
                                     </template>
                                 </Dropdown>
                             </div>
@@ -146,5 +151,6 @@ const showingNavigationDropdown = ref(false);
                 <slot />
             </main>
         </div>
+        <Footer />
     </div>
 </template>

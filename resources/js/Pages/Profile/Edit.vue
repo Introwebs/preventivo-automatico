@@ -1,12 +1,12 @@
 <script setup>
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import MainLayout from '@/Layouts/MainLayout.vue';
 import DeleteUserForm from './Partials/DeleteUserForm.vue';
 import UpdatePasswordForm from './Partials/UpdatePasswordForm.vue';
 import UpdateProfileInformationForm from './Partials/UpdateProfileInformationForm.vue';
 import * as common from '@/common';
 import { Head } from '@inertiajs/vue3';
 
-defineOptions({ layout: AuthenticatedLayout });
+defineOptions({ layout: MainLayout });
 
 defineProps({
     mustVerifyEmail: {
