@@ -26,8 +26,7 @@ const submit = () => {
         <Head title="Forgot Password" />
 
         <div class="mb-4 text-sm text-gray-600 dark:text-gray-400">
-            Forgot your password? No problem. Just let us know your email address and we will email you a password reset
-            link that will allow you to choose a new one.
+            Hai dimenticato la password? Nessun problema. Inserisci il tuo indirizzo e-mail e ti invieremo un link per crearne una nuova.
         </div>
 
         <div v-if="status" class="mb-4 font-medium text-sm text-green-600 dark:text-green-400">
@@ -43,7 +42,6 @@ const submit = () => {
                     type="email"
                     class="mt-1 block w-full"
                     v-model="form.email"
-                    required
                     autofocus
                     autocomplete="username"
                 />
@@ -51,9 +49,9 @@ const submit = () => {
                 <InputError class="mt-2" :message="form.errors.email" />
             </div>
 
-            <div class="flex items-center justify-end mt-4">
-                <PrimaryButton :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                    Email Password Reset Link
+            <div class="flex items-center justify-end mt-6">
+                <PrimaryButton class="!w-full !justify-center !py-3" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+                    Invia
                 </PrimaryButton>
             </div>
         </form>
