@@ -13,6 +13,8 @@ import 'primeicons/primeicons.css';
 import Tooltip from 'primevue/tooltip';
 import ScrollTop from 'primevue/scrolltop';
 import BackLink from '@/Components/BackLink.vue';
+import ToastService from 'primevue/toastservice';
+import { autoAnimatePlugin } from '@formkit/auto-animate/vue';
 
 const appName = 'Laravel';
 
@@ -23,6 +25,8 @@ createInertiaApp({
         return createApp({ render: () => h(App, props) })
             .use(plugin)
             .use(ZiggyVue)
+            .use(ToastService)
+            .use(autoAnimatePlugin)
             .use(PrimeVue, {unstyled: true, pt: Aura})
             .component('Link', Link)
             .component('Head', Head)

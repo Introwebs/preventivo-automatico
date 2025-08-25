@@ -9,7 +9,7 @@ import AuthenticatedLayout from './AuthenticatedLayout.vue';
             name="page-fade"
             mode="out-in"
         >
-            <div :key="$page.url">
+            <div :key="$page.url" class="pt-24">
                 <slot />
             </div>
         </Transition>

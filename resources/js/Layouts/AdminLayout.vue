@@ -5,6 +5,8 @@ import AuthenticatedLayout from './AuthenticatedLayout.vue';
 
 <template>
     <AuthenticatedLayout showAdminTag>
-        <slot />
+        <div class="pt-24">
+            <slot />
+        </div>
     </AuthenticatedLayout>
 </template>

@@ -22,3 +22,20 @@ export function getFormattedDateTime(date) {
 
     return `${formattedDate} ${formattedTime}`;
 }
+
+export function formatCurrency(value) {
+    return value.toLocaleString('it-IT', { style: 'currency', currency: 'EUR' });
+}
+
+export function clearNameForUrl(inputString, separator = '|') {
+    if (!inputString || typeof inputString !== 'string') {
+        return '';
+    }
+
+    const baseString = inputString.includes(separator)
+        ? inputString.split(separator)[0]
+        : inputString;
+
+    const cleared = baseString.trim().toLowerCase();
+    return cleared.replace(/ /g, '-');
+}
