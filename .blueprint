@@ -1,0 +1,28 @@
+created:
+    - database/factories/ServiceFactory.php
+    - database/factories/ServiceKeywordFactory.php
+    - database/factories/ServiceOptionFactory.php
+    - database/factories/LeadStatusFactory.php
+    - database/factories/LeadFactory.php
+    - database/factories/LeadRequestFactory.php
+    - database/migrations/2025_08_28_192206_create_services_table.php
+    - database/migrations/2025_08_28_192207_create_service_keywords_table.php
+    - database/migrations/2025_08_28_192208_create_service_options_table.php
+    - database/migrations/2025_08_28_192209_create_lead_statuses_table.php
+    - database/migrations/2025_08_28_192210_create_leads_table.php
+    - database/migrations/2025_08_28_192211_create_lead_requests_table.php
+    - database/migrations/2025_08_28_192212_create_lead_request_service_table.php
+    - database/migrations/2025_08_28_192213_create_lead_request_service_option_table.php
+    - app/Models/Service.php
+    - app/Models/ServiceKeyword.php
+    - app/Models/ServiceOption.php
+    - app/Models/LeadStatus.php
+    - app/Models/Lead.php
+    - app/Models/LeadRequest.php
+models:
+    Service: { meta: { table: services }, name: 'string:50', short_description: text, description: 'text nullable', base_price: 'decimal:10,2', is_active: 'boolean default:true', relationships: { hasMany: 'ServiceKeyword, ServiceOption' } }
+    ServiceKeyword: { meta: { table: service_keywords }, service_id: 'id foreign:services.id', name: 'string:50', priority: tinyInteger, is_exclusive: boolean, relationships: { belongsTo: Service } }
+    ServiceOption: { meta: { table: service_options }, service_id: 'id foreign:services.id', name: 'string:50', description: 'text nullable', price: 'decimal:10,2', is_active: 'boolean default:true', relationships: { belongsTo: Service } }
+    LeadStatus: { meta: { table: lead_statuses }, name: 'string:100', timestamps: false }
+    Lead: { meta: { table: leads }, status_id: 'id foreign:lead_statuses.id', name: 'string:100', email: 'string:100', phone: 'string:20 nullable', note: 'text nullable' }
+    LeadRequest: { meta: { table: lead_requests }, lead_id: 'foreign:leads.id', request_text: text, note: 'text nullable', relationships: { belongsTo: Lead, belongsToMany: 'Service, ServiceOption' } }

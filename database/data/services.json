@@ -1,0 +1,562 @@
+{
+    "services": [
+        {
+            "name": "Sito Web Vetrina",
+            "short_description": "Sito web vetrina professionale per la tua azienda o attività.",
+            "description": "La soluzione ideale per professionisti e piccole aziende che desiderano una presenza online professionale per presentare la propria attività, i propri servizi e i propri contatti. Non include la vendita diretta di prodotti.",
+            "base_price": 1000.00,
+            "is_active": true,
+            "keywords": [
+                {
+                    "name": "sito vetrina",
+                    "priority": 1,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "sito web",
+                    "priority": 3,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "sito aziendale",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "presenza online",
+                    "priority": 3,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "sito professionale",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "sito per la mia attività",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "creazione sito",
+                    "priority": 3,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "realizzazione sito",
+                    "priority": 3,
+                    "is_exclusive": false
+                }
+            ],
+            "options": [
+                {
+                    "name": "Blog Integrato",
+                    "description": "Aggiunta di una sezione news/blog per pubblicare articoli e aggiornamenti.",
+                    "price": 800.00,
+                    "is_active": true,
+                    "keywords": "blog, articoli, news, aggiornamenti"
+                },
+                {
+                    "name": "Pagina Aggiuntiva",
+                    "description": "Creazione di una pagina extra oltre le 5 incluse nel pacchetto base.",
+                    "price": 100.00,
+                    "is_active": true,
+                    "keywords": "pagina in più, pagina aggiuntiva, sezione extra, più pagine"
+                },
+                {
+                    "name": "Sistema Multilingua",
+                    "description": "Impostazione del sito per supportare una lingua aggiuntiva (testi forniti dal cliente).",
+                    "price": 500.00,
+                    "is_active": true,
+                    "keywords": "multilingua, traduzione, inglese, spagnolo, francese, più lingue"
+                },
+                {
+                    "name": "Pacchetto SEO Base",
+                    "description": "Ottimizzazione iniziale on-page: meta tag, keyword, immagini e sitemap per Google.",
+                    "price": 250.00,
+                    "is_active": true,
+                    "keywords": "seo, ottimizzazione, google, motori di ricerca, posizionamento"
+                },
+                {
+                    "name": "Galleria Fotografica Avanzata",
+                    "description": "Creazione di un portfolio o una galleria dinamica con categorie e filtri.",
+                    "price": 350.00,
+                    "is_active": true,
+                    "keywords": "galleria, foto, immagini, portfolio, lavori, gallery"
+                },
+                {
+                    "name": "Form di Contatto Avanzato",
+                    "description": "Form con logica condizionale, upload di file o calcoli.",
+                    "price": 300.00,
+                    "is_active": true,
+                    "keywords": "form contatti, modulo di contatto, preventivo, upload file, campi personalizzati"
+                }
+            ]
+        },
+        {
+            "name": "E-commerce",
+            "short_description": "Sito e-commerce sviluppato su misura per la tua attività.",
+            "description": "Piattaforma completa per la vendita online di prodotti. Include gestione catalogo, carrello, pagamenti sicuri e area utente.",
+            "base_price": 5000.00,
+            "is_active": true,
+            "keywords": [
+                {
+                    "name": "e-commerce",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "ecommerce",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "negozio online",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "shop online",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "vendita online",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "sito per vendere",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "catalogo prodotti",
+                    "priority": 3,
+                    "is_exclusive": false
+                }
+            ],
+            "options": [
+                {
+                    "name": "Area amministratore personalizzata",
+                    "description": "Trasforma la gestione del tuo e-commerce. Progettiamo un pannello di controllo semplificato e su misura per te, con accesso rapido alle funzioni essenziali e report chiari.",
+                    "price": 3000.00,
+                    "is_active": true,
+                    "keywords": "pannello di controllo, dashboard, area admin, gestione facile, back office, backend personalizzato"
+                },
+                {
+                    "name": "Importazione Massiva Prodotti",
+                    "description": "Importazione di prodotti da file CSV/Excel (fino a 100 prodotti).",
+                    "price": 700.00,
+                    "is_active": true,
+                    "keywords": "importazione prodotti, caricamento massivo, csv, excel, importazione catalogo"
+                },
+                {
+                    "name": "Gateway di Pagamento Extra",
+                    "description": "Integrazione di un sistema di pagamento aggiuntivo (es. Satispay, bonifico bancario).",
+                    "price": 150.00,
+                    "is_active": true,
+                    "keywords": "pagamenti, satispay, bonifico, carta di credito, gateway aggiuntivo"
+                },
+                {
+                    "name": "Gestione Coupon e Sconti",
+                    "description": "Sistema avanzato per creare e gestire codici sconto, offerte speciali e promozioni.",
+                    "price": 250.00,
+                    "is_active": true,
+                    "keywords": "coupon, sconti, codici sconto, promozioni, offerte"
+                },
+                {
+                    "name": "Recupero Carrello Abbandonato",
+                    "description": "Sistema automatico di email per incentivare i clienti a completare gli acquisti.",
+                    "price": 450.00,
+                    "is_active": true,
+                    "keywords": "carrello abbandonato, recupero carrelli, email promemoria"
+                },
+                {
+                    "name": "Fatturazione Elettronica",
+                    "description": "Integrazione per generare automaticamente fatture elettroniche dopo un acquisto.",
+                    "price": 400.00,
+                    "is_active": true,
+                    "keywords": "fatture elettroniche, fatturazione automatica, sdi"
+                },
+                {
+                    "name": "Formazione Gestione E-commerce",
+                    "description": "Sessione di formazione di 2 ore per imparare a gestire prodotti, ordini e clienti.",
+                    "price": 600.00,
+                    "is_active": true,
+                    "keywords": "formazione, corso, training, come usare, spiegazione"
+                }
+            ]
+        },
+        {
+            "name": "Piano di Manutenzione Mensile",
+            "short_description": "Assistenza e manutenzione continua e su misura.",
+            "description": "Servizio in abbonamento per mantenere il sito web sicuro, aggiornato e performante. Previene problemi tecnici e garantisce tranquillità.",
+            "base_price": 500.00,
+            "is_active": true,
+            "keywords": [
+                {
+                    "name": "manutenzione sito",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "supporto sito",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "assistenza sito",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "aggiornamento sito",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "sito sicuro",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "problemi sito",
+                    "priority": 3,
+                    "is_exclusive": false
+                }
+            ],
+            "options": [
+                {
+                    "name": "Piano Manutenzione Pro",
+                    "description": "Include assistenza base + backup giornalieri, report mensile, 1 ora di supporto tecnico.",
+                    "price": 300.00,
+                    "is_active": true,
+                    "keywords": "piano pro, manutenzione avanzata, report, backup giornalieri"
+                },
+                {
+                    "name": "Piano Manutenzione E-commerce",
+                    "description": "Include piano Pro + scansioni di sicurezza avanzate, controllo performance e ordini.",
+                    "price": 600.00,
+                    "is_active": true,
+                    "keywords": "manutenzione ecommerce, supporto ecommerce, sicurezza negozio"
+                },
+                {
+                    "name": "Intervento Tecnico a Chiamata",
+                    "description": "Supporto tecnico per risolvere un problema specifico (tariffa oraria, una tantum).",
+                    "price": 170.00,
+                    "is_active": true,
+                    "keywords": "intervento tecnico, problema urgente, risoluzione problema, supporto a chiamata"
+                }
+            ]
+        },
+        {
+            "name": "Landing Page",
+            "short_description": "Sito web single page per raccogliere contatti commerciali.",
+            "description": "Realizzazione di una pagina singola ad alta conversione, ottimizzata per campagne pubblicitarie, lancio di prodotti o raccolta contatti.",
+            "base_price": 700.00,
+            "is_active": true,
+            "keywords": [
+                {
+                    "name": "landing page",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "pagina di atterraggio",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "pagina per campagna",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "pagina prodotto singolo",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "pagina raccolta contatti",
+                    "priority": 2,
+                    "is_exclusive": false
+                }
+            ],
+            "options": [
+                {
+                    "name": "Copywriting Persuasivo",
+                    "description": "Scrittura dei testi della pagina da parte di un copywriter professionista.",
+                    "price": 400.00,
+                    "is_active": true,
+                    "keywords": "copywriting, copy, scrittura testi, testi persuasivi"
+                },
+                {
+                    "name": "Integrazione CRM/Mailing List",
+                    "description": "Collegamento del form di contatto a servizi come Mailchimp, HubSpot, ActiveCampaign.",
+                    "price": 150.00,
+                    "is_active": true,
+                    "keywords": "integrazione crm, mailchimp, activecampaign, hubspot, mailing list"
+                },
+                {
+                    "name": "Setup A/B Test",
+                    "description": "Creazione di due versioni della pagina per testare quale performa meglio.",
+                    "price": 500.00,
+                    "is_active": true,
+                    "keywords": "a/b test, split test, testare versioni, ottimizzazione conversioni"
+                },
+                {
+                    "name": "Installazione Pixel Tracciamento",
+                    "description": "Configurazione dei pixel di Facebook, Google Ads, LinkedIn per monitorare le conversioni.",
+                    "price": 100.00,
+                    "is_active": true,
+                    "keywords": "pixel facebook, pixel google, tracciamento, monitoraggio, conversioni, google ads"
+                }
+            ]
+        },
+        {
+            "name": "Integrazione e Automazione Workflow",
+            "short_description": "Creaazione di un workflow su misura per automatizzare le tue task della tua attività.",
+            "description": "Elimina le attività manuali e ripetitive collegando le tue applicazioni preferite (es. email, fogli di calcolo, CRM, social media). Creiamo flussi di lavoro automatici che ti fanno risparmiare tempo e riducono gli errori.",
+            "base_price": 1400.00,
+            "is_active": true,
+            "keywords": [
+                {
+                    "name": "automazione",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "workflow",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "processi automatici",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "automatizzare",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "collegare app",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "integrazione",
+                    "priority": 3,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "n8n",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "zapier",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "make",
+                    "priority": 1,
+                    "is_exclusive": true
+                }
+            ],
+            "options": [
+                {
+                    "name": "Connessione a Database Esterno",
+                    "description": "Sincronizzazione dei dati del workflow con un database SQL esterno.",
+                    "price": 1000.00,
+                    "is_active": true,
+                    "keywords": "database, sql, connessione db, sincronizzazione dati"
+                },
+                {
+                    "name": "Piano Manutenzione Automazioni",
+                    "description": "Monitoraggio mensile e manutenzione dei workflow per garantirne il funzionamento (abbonamento).",
+                    "price": 300.00,
+                    "is_active": true,
+                    "keywords": "manutenzione workflow, controllo automazioni, supporto n8n"
+                },
+                {
+                    "name": "Formazione Gestione Automazione",
+                    "description": "Sessione di 1 ora per insegnare al cliente come monitorare e gestire il workflow creato.",
+                    "price": 100.00,
+                    "is_active": true,
+                    "keywords": "formazione automazione, corso n8n, training zapier"
+                }
+            ]
+        },
+        {
+            "name": "CRM",
+            "short_description": "Realizzazione di un CRM per le esigenze specifiche della tua attività.",
+            "description": "Centralizza tutti i dati dei tuoi clienti, gestisci la pipeline di vendita e migliora le relazioni. Ci occupiamo della configurazione iniziale di piattaforme CRM (come HubSpot, Zoho, etc.) per adattarle al tuo business.",
+            "base_price": 4500.00,
+            "is_active": true,
+            "keywords": [
+                {
+                    "name": "crm",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "hubspot",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "gestione clienti",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "gestione contatti",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "pipeline di vendita",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "sales pipeline",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "relazioni con i clienti",
+                    "priority": 3,
+                    "is_exclusive": false
+                }
+            ],
+            "options": [
+                {
+                    "name": "Migrazione Dati Avanzata",
+                    "description": "Importazione e pulizia di dati da sistemi complessi o multipli (prezzo per 1000 contatti).",
+                    "price": 250.00,
+                    "is_active": true,
+                    "keywords": "migrazione dati, importazione contatti, pulizia dati"
+                },
+                {
+                    "name": "Integrazione con Sito Web",
+                    "description": "Collegamento dei form di contatto del sito direttamente al CRM per la creazione automatica di lead.",
+                    "price": 1500.00,
+                    "is_active": true,
+                    "keywords": "integrazione sito, form crm, lead dal sito"
+                },
+                {
+                    "name": "Personalizzazione Pipeline Vendita",
+                    "description": "Creazione di fasi e proprietà personalizzate per la pipeline di vendita.",
+                    "price": 800.00,
+                    "is_active": true,
+                    "keywords": "pipeline personalizzata, fasi di vendita, sales pipeline"
+                },
+                {
+                    "name": "Setup Email Marketing Automation",
+                    "description": "Creazione di una sequenza email automatica di benvenuto o nurturing all'interno del CRM.",
+                    "price": 700.00,
+                    "is_active": true,
+                    "keywords": "email marketing, automazione email, nurturing, sequenza email"
+                },
+                {
+                    "name": "Formazione Team (per 5 persone)",
+                    "description": "Sessione formativa di 3 ore per insegnare al team come utilizzare efficacemente il nuovo CRM.",
+                    "price": 280.00,
+                    "is_active": true,
+                    "keywords": "formazione crm, corso per il team, training hubspot"
+                }
+            ]
+        },
+        {
+            "name": "Software gestionale",
+            "short_description": "Realizzazione di un software gestionale completo per gestire ogni richiesta",
+            "description": "Quando un software standard non basta, creiamo una soluzione web-based personalizzata per le esigenze uniche del tuo business: gestione magzazino, sistema di prenotazioni, area clienti riservata e altro.",
+            "base_price": 6000.00,
+            "is_active": true,
+            "keywords": [
+                {
+                    "name": "software gestionale",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "gestionale su misura",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "software personalizzato",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "piattaforma custom",
+                    "priority": 1,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "gestione magazzino",
+                    "priority": 2,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "sistema di prenotazione",
+                    "priority": 2,
+                    "is_exclusive": true
+                },
+                {
+                    "name": "area riservata",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "gestione fatture",
+                    "priority": 2,
+                    "is_exclusive": false
+                }
+            ],
+            "options": [
+                {
+                    "name": "Modulo Gestione Utenti e Permessi",
+                    "description": "Sistema per creare diversi livelli di accesso per amministratori, staff e utenti.",
+                    "price": 800.00,
+                    "is_active": true,
+                    "keywords": "gestione utenti, ruoli, permessi, accessi"
+                },
+                {
+                    "name": "Integrazione API Esterne",
+                    "description": "Collegamento del software a servizi esterni (es. corrieri, gateway di pagamento, fornitori).",
+                    "price": 1200.00,
+                    "is_active": true,
+                    "keywords": "integrazione api, api esterne, collegare servizi"
+                },
+                {
+                    "name": "Dashboard e Reportistica Avanzata",
+                    "description": "Creazione di una dashboard con grafici e statistiche per analizzare i dati raccolti.",
+                    "price": 950.00,
+                    "is_active": true,
+                    "keywords": "dashboard, report, statistiche, grafici, analisi dati"
+                },
+                {
+                    "name": "Interfaccia Responsive per Mobile",
+                    "description": "Ottimizzazione completa dell'interfaccia per un utilizzo fluido su tablet e smartphone.",
+                    "price": 1300.00,
+                    "is_active": true,
+                    "keywords": "responsive, mobile, tablet, ottimizzazione mobile, app"
+                },
+                {
+                    "name": "Contratto Manutenzione Evolutiva",
+                    "description": "Pacchetto di ore mensili per sviluppi futuri, aggiornamenti e supporto prioritario.",
+                    "price": 300.00,
+                    "is_active": true,
+                    "keywords": "manutenzione evolutiva, aggiornamenti futuri, sviluppi aggiuntivi"
+                }
+            ]
+        }
+    ]
+}
