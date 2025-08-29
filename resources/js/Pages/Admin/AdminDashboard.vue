@@ -1,6 +1,7 @@
 <script setup>
 import AdminLayout from '@/Layouts/AdminLayout.vue';
 import LoadingIcon from '@/Components/LoadingIcon.vue';
+import ServiceCard from '@/Components/ServiceCard.vue';
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
 
@@ -33,7 +34,12 @@ onMounted(() => {
             <LoadingIcon size="lg" />
         </div>
         <div v-else>
-            {{ services }}
+            <div>
+                <ServiceCard
+                    v-for="(service, index) in services" :key="index"
+                    :service="service"
+                />
+            </div>
         </div>
     </div>
 </template>

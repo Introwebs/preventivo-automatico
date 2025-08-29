@@ -29,7 +29,9 @@ const navLinks = ref([
             <!-- Logo -->
             <div class="flex items-center justify-center gap-x-3 h-20 px-3 border-b border-gray-700">
                 <LightDarkModeButton />
-                <!-- <span v-if="isExpanded" class="text-lg font-bold text-gray-700 dark:text-gray-200">Preventivo Automatico</span> -->
+                <div v-auto-animate>
+                    <span v-if="isExpanded" class="text-lg font-bold text-gray-700 dark:text-gray-200">Preventivo Automatico</span>
+                </div>
             </div>
 
             <!-- Navigation Links -->
