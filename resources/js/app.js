@@ -16,7 +16,7 @@ import BackLink from '@/Components/BackLink.vue';
 import ToastService from 'primevue/toastservice';
 import { autoAnimatePlugin } from '@formkit/auto-animate/vue';
 
-const appName = 'Laravel';
+const appName = 'Preventivo Automatico';
 
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,
@@ -35,7 +35,5 @@ createInertiaApp({
             .directive('tooltip', Tooltip)
             .mount(el);
     },
-    progress: {
-        color: '#4B5563',
-    },
+    progress: false
 });

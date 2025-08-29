@@ -21,7 +21,7 @@ const svgSize = computed(() => {
 
 <template>
     <svg
-        class="mx-auto textPrimary animate-spin mb-4"
+        class="mx-auto text-gray-800 dark:text-gray-200 animate-spin mb-4"
         :class="svgSize"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
