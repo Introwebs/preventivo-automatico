@@ -25,8 +25,8 @@ const formatPrice = (price) => {
     <div ref="parent" class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden border border-gray-200/80 dark:border-gray-700 transition-all hover:shadow-xl mb-6">
         <!-- Always visible header -->
         <div class="p-6 cursor-pointer" @click="toggleExpand">
-            <div class="flex justify-between items-start">
-                <div class="flex-grow pr-4">
+            <div class="flex flex-col sm:flex-row justify-between items-start">
+                <div class="flex-grow pr-4 mb-4 sm:mb-0">
                     <div class="flex items-center gap-3 mb-1">
                         <span
                             :class="[service.is_active ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300' : 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300']"
@@ -38,7 +38,7 @@ const formatPrice = (price) => {
                     <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200">{{ service.name }}</h3>
                     <p class="text-gray-500 dark:text-gray-400 mt-1">{{ service.short_description }}</p>
                 </div>
-                <div class="text-right flex-shrink-0">
+                <div class="text-left sm:text-right flex-shrink-0">
                     <p class="text-2xl font-semibold text-gray-900 dark:text-white">{{ formatPrice(service.base_price) }}</p>
                     <p class="text-sm text-gray-500 dark:text-gray-400">Prezzo base</p>
                 </div>
@@ -75,8 +75,8 @@ const formatPrice = (price) => {
             <div class="mt-6" v-if="service.options && service.options.length">
                 <h4 class="font-semibold text-gray-700 dark:text-gray-300 mb-3">Opzioni</h4>
                 <ul class="space-y-3">
-                    <li v-for="option in service.options" :key="option.name" class="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700 flex justify-between items-start">
-                        <div>
+                    <li v-for="option in service.options" :key="option.name" class="bg-white dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700 flex flex-col sm:flex-row justify-between items-start">
+                        <div class="mb-4 sm:mb-0">
                             <div class="flex items-center gap-2">
                                 <span
                                     :class="[option.is_active ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300' : 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300']"
@@ -91,7 +91,7 @@ const formatPrice = (price) => {
                                 <span v-for="kw in option.keywords" :key="kw" class="bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300 text-[11px] font-medium px-2 py-0.5 rounded-md">{{ kw }}</span>
                             </div>
                         </div>
-                        <div class="text-right ml-4 flex-shrink-0">
+                        <div class="text-left sm:text-right ml-0 sm:ml-4 flex-shrink-0">
                             <p class="font-semibold text-gray-900 dark:text-white">{{ formatPrice(option.price) }}</p>
                         </div>
                     </li>

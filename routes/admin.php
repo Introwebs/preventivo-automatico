@@ -14,6 +14,7 @@ Route::get('/', [AdminController::class, 'dashboard'])->name('admin.dashboard');
 Route::get('/getservices', [AdminController::class, 'getServices'])->name('admin.getServices');
 
 // Workflow
-Route::middleware('wokflow.api')->group(function () {
-    Route::get('/api/getservicedata', [WorkflowApiController::class, 'getServiceData'])->name('api.getServiceData');
-});
+/* Route::middleware('wokflow.api')->group(function () {
+    Route::get('/api/getservicedata', [WorkflowApiController::class, 'getServiceData'])->name('workflow.getServiceData');
+    Route::post('/api/generatepdffromworkflowoutput', [WorkflowApiController::class, 'generatePdf'])->name('workflow.generatePdf');
+}); */

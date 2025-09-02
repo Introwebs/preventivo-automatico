@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WorkflowApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/api/getservicedata', [WorkflowApiController::class, 'getServiceData'])->name('workflow.getServiceData')->middleware('wokflow.api');
+Route::post('/api/retreivedata', [WorkflowApiController::class, 'retreiveData'])->name('workflow.retreiveData')->middleware('wokflow.api');

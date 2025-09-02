@@ -36,4 +36,14 @@ class WorkflowApiController extends Controller
 
         return response()->json($services);
     }
+
+    public function retreiveData(Request $request) {
+        $workflowData = $request->all();
+        $dataReceived = $workflowData['data'];
+        $inputData = $dataReceived['inputData'];
+        $outputData = $dataReceived['outputData'];
+        return response()->json([
+            'dataReceived' => $dataReceived
+        ]);
+    }
 }

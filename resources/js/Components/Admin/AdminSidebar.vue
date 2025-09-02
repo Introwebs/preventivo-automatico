@@ -5,9 +5,16 @@ import { vAutoAnimate } from '@formkit/auto-animate';
 import ApplicationLogo from '../ApplicationLogo.vue';
 import LightDarkModeButton from '../LightDarkModeButton.vue';
 
+const props = defineProps({
+    isOpenOnMobile: {
+        type: Boolean,
+        default: false
+    }
+});
+
 const isExpanded = ref(true);
 
-const emit = defineEmits(['update:expanded']);
+const emit = defineEmits(['update:expanded', 'close']);
 
 watch(isExpanded, (newValue) => {
     emit('update:expanded', newValue);
@@ -19,19 +26,34 @@ const navLinks = ref([
 </script>
 
 <template>
+    <div
+        v-if="isOpenOnMobile"
+        @click="$emit('close')"
+        class="fixed inset-0 bg-black/50 z-30 lg:hidden"
+    ></div>
+
     <aside
         :class="[
             'fixed top-0 left-0 h-screen bg-gray-300 dark:bg-gray-800 text-gray-200 transition-all duration-300 ease-in-out z-40',
-            isExpanded ? 'w-72' : 'w-20'
+            'w-64',
+            isExpanded ? 'lg:w-72' : 'lg:w-20',
+            'transform',
+            isOpenOnMobile ? 'translate-x-0' : '-translate-x-full',
+            'lg:translate-x-0'
         ]"
     >
         <div class="flex flex-col h-full">
-            <!-- Logo -->
-            <div class="flex items-center justify-center gap-x-3 h-20 px-3 border-b border-gray-700">
-                <LightDarkModeButton />
-                <div v-auto-animate>
-                    <span v-if="isExpanded" class="text-lg font-bold text-gray-700 dark:text-gray-200">Preventivo Automatico</span>
+            <!-- Logo and Mobile Close Button -->
+            <div class="flex items-center justify-center h-20 px-3 border-b border-gray-700">
+                <div class="flex items-center gap-x-3">
+                    <LightDarkModeButton />
+                    <div v-auto-animate>
+                        <span v-if="isExpanded" class="text-lg font-bold text-gray-700 dark:text-gray-200">Preventivo Automatico</span>
+                    </div>
                 </div>
+                <button @click="$emit('close')" class="lg:hidden p-2">
+                    <i class="pi pi-times text-xl text-gray-700 dark:text-gray-200"></i>
+                </button>
             </div>
 
             <!-- Navigation Links -->
@@ -62,7 +84,7 @@ const navLinks = ref([
                 <div class="flex items-center justify-between gap-x-3">
                     <button
                         @click="isExpanded = !isExpanded"
-                        class="flex items-center justify-center w-full p-3 rounded-lg text-gray-700 dark:text-gray-100 hover:bg-gray-400 dark:hover:bg-gray-700 transition-colors duration-200"
+                        class="hidden lg:flex items-center justify-center w-full p-3 rounded-lg text-gray-700 dark:text-gray-100 hover:bg-gray-400 dark:hover:bg-gray-700 transition-colors duration-200"
                     >
                         <i :class="['pi', isExpanded ? 'pi-angle-left' : 'pi-angle-right', 'text-xl']"></i>
                     </button>
@@ -74,7 +96,7 @@ const navLinks = ref([
 
 <style scoped>
 /* Nasconde il testo quando la sidebar è compressa per evitare che vada a capo */
-aside:not(.w-72) nav span {
+aside.lg\:w-20 nav span {
     position: absolute;
     width: 1px;
     height: 1px;
