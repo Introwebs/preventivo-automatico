@@ -18,6 +18,11 @@
                     "is_exclusive": false
                 },
                 {
+                    "name": "pagina web",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
                     "name": "sito aziendale",
                     "priority": 2,
                     "is_exclusive": false
@@ -54,14 +59,7 @@
                     "description": "Aggiunta di una sezione news/blog per pubblicare articoli e aggiornamenti.",
                     "price": 800.00,
                     "is_active": true,
-                    "keywords": "blog, articoli, news, aggiornamenti"
-                },
-                {
-                    "name": "Pagina Aggiuntiva",
-                    "description": "Creazione di una pagina extra oltre le 5 incluse nel pacchetto base.",
-                    "price": 100.00,
-                    "is_active": true,
-                    "keywords": "pagina in più, pagina aggiuntiva, sezione extra, più pagine"
+                    "keywords": "blog, articoli, news, aggiornamenti, magazine"
                 },
                 {
                     "name": "Sistema Multilingua",
@@ -106,11 +104,6 @@
                     "is_exclusive": true
                 },
                 {
-                    "name": "ecommerce",
-                    "priority": 1,
-                    "is_exclusive": true
-                },
-                {
                     "name": "negozio online",
                     "priority": 1,
                     "is_exclusive": true
@@ -142,7 +135,7 @@
                     "description": "Trasforma la gestione del tuo e-commerce. Progettiamo un pannello di controllo semplificato e su misura per te, con accesso rapido alle funzioni essenziali e report chiari.",
                     "price": 3000.00,
                     "is_active": true,
-                    "keywords": "pannello di controllo, dashboard, area admin, gestione facile, back office, backend personalizzato"
+                    "keywords": "pannello di controllo, dashboard, area admin, area riservata, gestione, back office, backend,"
                 },
                 {
                     "name": "Importazione Massiva Prodotti",
@@ -156,7 +149,7 @@
                     "description": "Integrazione di un sistema di pagamento aggiuntivo (es. Satispay, bonifico bancario).",
                     "price": 150.00,
                     "is_active": true,
-                    "keywords": "pagamenti, satispay, bonifico, carta di credito, gateway aggiuntivo"
+                    "keywords": "pagamenti, satispay, klarna, bonifico, carta di credito, gateway aggiuntivo"
                 },
                 {
                     "name": "Gestione Coupon e Sconti",
@@ -177,7 +170,7 @@
                     "description": "Integrazione per generare automaticamente fatture elettroniche dopo un acquisto.",
                     "price": 400.00,
                     "is_active": true,
-                    "keywords": "fatture elettroniche, fatturazione automatica, sdi"
+                    "keywords": "fatturazione, fatture elettroniche, fatturazione automatica, sdi"
                 },
                 {
                     "name": "Formazione Gestione E-commerce",
@@ -191,7 +184,7 @@
         {
             "name": "Piano di Manutenzione Mensile",
             "short_description": "Assistenza e manutenzione continua e su misura.",
-            "description": "Servizio in abbonamento per mantenere il sito web sicuro, aggiornato e performante. Previene problemi tecnici e garantisce tranquillità.",
+            "description": "Servizio in abbonamento per mantenere il sito web sicuro, aggiornato e performante. Offriamo piani di assistenza per mantenere il tuo sito sempre al top.",
             "base_price": 500.00,
             "is_active": true,
             "keywords": [
@@ -246,7 +239,7 @@
                     "description": "Supporto tecnico per risolvere un problema specifico (tariffa oraria, una tantum).",
                     "price": 170.00,
                     "is_active": true,
-                    "keywords": "intervento tecnico, problema urgente, risoluzione problema, supporto a chiamata"
+                    "keywords": "intervento tecnico, problema urgente, risoluzione problema, supporto a chiamata, operatore umano"
                 }
             ]
         },
@@ -281,6 +274,11 @@
                     "name": "pagina raccolta contatti",
                     "priority": 2,
                     "is_exclusive": false
+                },
+                {
+                    "name": "lead",
+                    "priority": 1,
+                    "is_exclusive": false
                 }
             ],
             "options": [
@@ -289,7 +287,7 @@
                     "description": "Scrittura dei testi della pagina da parte di un copywriter professionista.",
                     "price": 400.00,
                     "is_active": true,
-                    "keywords": "copywriting, copy, scrittura testi, testi persuasivi"
+                    "keywords": "copywriting, copy, scrittura testi, testi persuasivi, vendita"
                 },
                 {
                     "name": "Integrazione CRM/Mailing List",
@@ -360,11 +358,6 @@
                     "name": "zapier",
                     "priority": 1,
                     "is_exclusive": true
-                },
-                {
-                    "name": "make",
-                    "priority": 1,
-                    "is_exclusive": true
                 }
             ],
             "options": [
@@ -373,21 +366,21 @@
                     "description": "Sincronizzazione dei dati del workflow con un database SQL esterno.",
                     "price": 1000.00,
                     "is_active": true,
-                    "keywords": "database, sql, connessione db, sincronizzazione dati"
+                    "keywords": "database, sql, connessione db, sincronizzazione dati, salvataggio dati"
                 },
                 {
                     "name": "Piano Manutenzione Automazioni",
                     "description": "Monitoraggio mensile e manutenzione dei workflow per garantirne il funzionamento (abbonamento).",
                     "price": 300.00,
                     "is_active": true,
-                    "keywords": "manutenzione workflow, controllo automazioni, supporto n8n"
+                    "keywords": "manutenzione, assistenza, controllo automazioni, supporto n8n"
                 },
                 {
                     "name": "Formazione Gestione Automazione",
                     "description": "Sessione di 1 ora per insegnare al cliente come monitorare e gestire il workflow creato.",
                     "price": 100.00,
                     "is_active": true,
-                    "keywords": "formazione automazione, corso n8n, training zapier"
+                    "keywords": "formazione, corso n8n, training"
                 }
             ]
         },
@@ -415,6 +408,11 @@
                 },
                 {
                     "name": "gestione contatti",
+                    "priority": 2,
+                    "is_exclusive": false
+                },
+                {
+                    "name": "gestione lead",
                     "priority": 2,
                     "is_exclusive": false
                 },
