@@ -173,6 +173,20 @@
                     "keywords": "fatturazione, fatture elettroniche, fatturazione automatica, sdi"
                 },
                 {
+                    "name": "Blog Integrato",
+                    "description": "Aggiunta di una sezione news/blog per pubblicare articoli e aggiornamenti.",
+                    "price": 800.00,
+                    "is_active": true,
+                    "keywords": "blog, articoli, news, aggiornamenti, magazine"
+                },
+                {
+                    "name": "Sistema Multilingua",
+                    "description": "Impostazione del sito per supportare una lingua aggiuntiva (testi forniti dal cliente).",
+                    "price": 500.00,
+                    "is_active": true,
+                    "keywords": "multilingua, traduzione, inglese, spagnolo, francese, più lingue"
+                },
+                {
                     "name": "Formazione Gestione E-commerce",
                     "description": "Sessione di formazione di 2 ore per imparare a gestire prodotti, ordini e clienti.",
                     "price": 600.00,
@@ -309,6 +323,13 @@
                     "price": 100.00,
                     "is_active": true,
                     "keywords": "pixel facebook, pixel google, tracciamento, monitoraggio, conversioni, google ads"
+                },
+                {
+                    "name": "Sistema Multilingua",
+                    "description": "Impostazione del sito per supportare una lingua aggiuntiva (testi forniti dal cliente).",
+                    "price": 200.00,
+                    "is_active": true,
+                    "keywords": "multilingua, traduzione, inglese, spagnolo, francese, più lingue"
                 }
             ]
         },
